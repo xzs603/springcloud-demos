@@ -1,5 +1,10 @@
 package com.mttsui.scloud.controller;
 
+/**
+ * @Author: zsxu2
+ * @Date 2018/10/18 22:05
+ */
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,7 +19,7 @@ public class ComputeController {
 
     @GetMapping("hello")
     public String hello(){
-        return "hello1";
+        return "hello2";
     }
 
     @GetMapping("add")

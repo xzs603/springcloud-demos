@@ -1,9 +1,9 @@
 server:
-  port: 4444
+  port: 3333
 
 spring:
   application:
-    name: service2
+    name: service1
 
 eureka:
   client:
