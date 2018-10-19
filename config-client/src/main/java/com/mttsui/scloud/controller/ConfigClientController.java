@@ -13,11 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ConfigClientController {
 
-    //@Value("${config.foo}")
+    @Value("${nickName}")
+    private String nickName;
+
+    @Value("${config.foo}")
     private String foo = "123";
 
     @GetMapping("foo")
     public String foo() {
-        return foo;
+        return nickName + "-" + foo;
     }
 }

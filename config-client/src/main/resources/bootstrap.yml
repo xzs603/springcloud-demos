@@ -11,4 +11,9 @@ spring:
     name: config-client
   cloud:
     config:
-      serviceId: config-server
+      profile: dev
+      # uri与discovery配置一即可
+      #uri: http://127.0.0.1:6666
+      discovery:
+        enabled: true
+        service-id: config-server
