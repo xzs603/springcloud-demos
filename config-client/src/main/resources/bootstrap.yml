@@ -16,4 +16,4 @@ spring:
       #uri: http://127.0.0.1:6666
       discovery:
         enabled: true
-        service-id: config-server
+        service-id: config-git
