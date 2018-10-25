@@ -17,3 +17,7 @@ spring:
       discovery:
         enabled: true
         service-id: config-git
+
+management:
+  security:
+    enabled: false #关掉安全认证

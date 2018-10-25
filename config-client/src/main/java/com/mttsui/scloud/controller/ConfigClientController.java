@@ -16,7 +16,7 @@ public class ConfigClientController {
     @Value("${nickName}")
     private String nickName;
 
-    @Value("${config.foo}")
+    @Value("${foo.bar}")
     private String foo = "123";
 
     @GetMapping("foo")
