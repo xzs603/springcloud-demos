@@ -4,8 +4,16 @@ server:
 spring:
   application:
     name: service1
+  redis:
+    host: localhost
+    port: 6379
+    password: j2xe4nWDTg08
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:1111/eureka/
+
+logging:
+  path: /var/log/service1
+

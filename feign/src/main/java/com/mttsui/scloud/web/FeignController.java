@@ -1,4 +1,4 @@
-package com.mttsui.scloud.controller;
+package com.mttsui.scloud.web;
 
 import com.mttsui.scloud.client.ComputeClient;
 import com.mttsui.scloud.client.Feign1Client;

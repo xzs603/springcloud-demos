@@ -1,4 +1,4 @@
-package com.mttsui.scloud.controller;
+package com.mttsui.scloud.web;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;

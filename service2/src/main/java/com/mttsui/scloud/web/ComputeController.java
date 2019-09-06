@@ -1,4 +1,4 @@
-package com.mttsui.scloud.controller;
+package com.mttsui.scloud.web;
 
 /**
  * @Author: zsxu2
