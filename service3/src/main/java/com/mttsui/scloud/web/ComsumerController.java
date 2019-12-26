@@ -10,14 +10,14 @@ import org.springframework.web.client.RestTemplate;
  * @Author: zsxu2
  * @Date 2018/10/18 22:25
  */
-@RequestMapping("consumer")
+@RequestMapping("/consumer")
 @RestController
 public class ComsumerController {
 
     @Autowired
     private RestTemplate restTemplate;
 
-    @GetMapping("add")
+    @GetMapping("/add")
     public String add() {
         return restTemplate.getForEntity("http://SERVICE1/compute/hello", String.class).getBody();
     }

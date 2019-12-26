@@ -13,16 +13,16 @@ import org.springframework.web.bind.annotation.RestController;
  * @Author: zsxu2
  * @Date 2018/10/18 22:04
  */
-@RequestMapping("compute")
+@RequestMapping("/compute2")
 @RestController
-public class ComputeController {
+public class Compute2Controller {
 
-    @GetMapping("hello")
+    @GetMapping("/hello")
     public String hello(){
         return "hello2";
     }
 
-    @GetMapping("add")
+    @GetMapping("/add")
     public Integer add(Integer a, Integer b) {
         return a + b;
     }
