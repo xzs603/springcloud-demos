@@ -28,18 +28,14 @@ public class ComputeController {
 
     @GetMapping("/hello")
     public String hello(){
-        logger.info("get hello");
-        logger.error("get hello");
         User user = new User( "张三丰", 102);
         try {
             String userStr = objectMapper.writeValueAsString(user);
-
             stringRedisTemplate.opsForValue().set("name", userStr);
             String obj = stringRedisTemplate.opsForValue().get("name");
             logger.info(obj);
             User user2 = objectMapper.readValue(obj, User.class);
             logger.info(user2.toString());
-//          throw new IllegalAccessException("ok");
         } catch (Exception e) {
             logger.error("error occur", e);
         }
